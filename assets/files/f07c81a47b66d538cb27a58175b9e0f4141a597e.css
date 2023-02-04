@@ -1,0 +1,539 @@
+/* Custom Theme */
+/*
+Date: 09/08/2017
+Author: Sawan Budhbhatti
+Email: sbudhbhatti@etech.medallia.com
+*/
+/* Import Google Roboto fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+/*** Background color for the page ***/
+html {
+  background: #FFFFFF;
+}
+
+
+
+/* Page background, fonts */
+body {
+    /*background-color: #24993A;*/
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.2;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background: none;
+    /*opacity: 0.93;*/
+}
+
+/* For display of questions in the container
+
+.layout_layoutContainer {
+    background-color: white;
+    padding-top: 0%
+}
+*/
+
+/* For resizing logo image */
+
+.layout_logo {
+    width: 222px;
+    height: 44px;
+    float: left;
+    margin-bottom: 0%;
+}
+.layout_mainHeader.layout_clearfix {
+    padding-bottom: 0%;
+}
+
+
+/* Footer Styling
+.spanFoot {
+    border-right: dotted 1px #999999;
+}
+td {
+width: 33%;
+ padding-left: 4%;
+}
+div#customfooter {
+    padding-bottom: 4%;
+}
+*/
+/* For removing padding */
+
+.layout_text {
+    padding: 0%;
+}
+
+/* For resizing textbox */
+
+.textField_textfieldContainer.layout_answer {
+    width: 75%;
+}
+
+/* For Receipt code */
+.printCont {
+    -webkit-box-sizing: border-box;
+    float: right;
+padding: 12% 2%;
+    width: 35%;
+padding-top: 2%;
+}
+
+/* Progress bar color */
+.progressbar_progressBarIndicator {
+    background-color: #006230;
+    height: 100%;
+}
+.progressbar_progressBar {
+    background-color: #FFC20D;
+    height: 6px;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+
+/*
+-----------------------------
+Change hover effect color
+-----------------------------
+
+.hasNoTouch .option_input:hover+.option_optionContainer,
+.hasNoTouch .cellOption_cellOptionContainer:hover,
+.textField_textField:focus, .textField_textField:hover,
+.textarea_textareaContainer:hover, .textarea_textareaContainer_isFocused,
+.hasNoTouch.selectionBar_selectionUnit:hover, .rowOption_naOption:hover,
+.dropdown_dropdownSelector:focus, .dropdown_dropdownSelector:hover, .dropdown_dropdownListItem:hover {
+  box-shadow: 0 0 0 3px #ff0000;
+}
+*/
+
+.dropdown_dropdownSelector:focus, .dropdown_dropdownSelector:hover, .hasNoTouch .option_input:hover+.option_optionContainer, .hasNoTouch .cellOption_input:focus+.cellOption_indicatorContainer,
+.hasNoTouch .cellOption_input:hover+.cellOption_indicatorContainer, .textarea_textareaContainer:hover, .textarea_textareaContainer_isFocused, .layoutListItem_layoutListItemContainer_hasHighlights:hover, .dropdown_dropdownListItem:hover, .hasNoTouch .option_optionContainer:hover, .hasNoTouch .option_optionContainer:focus, .textField_textField:focus, .textField_textField:hover,
+.calendarTextfieldInput:hover, .calendarTextfieldInput:focus, .calendar_calendarIconContainer:focus, .calendar_calendarIconContainer:hover, .hasNoTouch .day_day:focus, .hasNoTouch .day_day:hover
+{
+  box-shadow: 0 0 0 3px #006230;
+}
+@media screen and (max-width: 600px) {
+  .hasNoTouch .option_input:hover+.option_optionContainer,
+  .hasNoTouch .cellOption_cellOptionContainer:hover,
+  .textField_textField:focus, .textField_textField:hover,
+  .hasNoTouch.selectionBar_selectionUnit:hover, .rowOption_naOption:hover,
+  .dropdown_dropdownSelector:focus, .dropdown_dropdownSelector:hover, .dropdown_dropdownListItem:hover {
+    box-shadow: none;
+  }
+}
+/*
+---------------------------------------------
+Change radio button & checkbox selected color
+---------------------------------------------
+*/
+.indicatorRadio_indicatorRadioContainer_isSelected {
+border-color: #ff0000;
+}
+
+/*.group_optionContainer:nth-of-type(1) .indicatorRadio_indicatorRadioContainer{
+  background: red;
+}
+.group_optionContainer:nth-of-type(2) .indicatorRadio_indicatorRadioContainer{
+  background: orange;
+}
+.group_optionContainer:nth-of-type(3) .indicatorRadio_indicatorRadioContainer{
+  background: yellow;
+}
+.group_optionContainer:nth-of-type(4) .indicatorRadio_indicatorRadioContainer{
+  background: lightgreen;
+}
+.group_optionContainer:nth-of-type(5) .indicatorRadio_indicatorRadioContainer{
+  background: green;
+}
+
+.group_optionContainer:nth-of-type(1) .indicatorRadio_indicatorRadioContainer_isSelected{
+  background: red;
+}
+.group_optionContainer:nth-of-type(2) .indicatorRadio_indicatorRadioContainer_isSelected{
+  background: orange;
+}
+.group_optionContainer:nth-of-type(3) .indicatorRadio_indicatorRadioContainer_isSelected{
+  background: yellow;
+}
+.group_optionContainer:nth-of-type(4) .indicatorRadio_indicatorRadioContainer_isSelected{
+  background: lightgreen;
+}
+.group_optionContainer:nth-of-type(5) .indicatorRadio_indicatorRadioContainer_isSelected{
+  background: green;
+}
+*/
+.indicatorCircle_circle_isSelected {
+  background: #ff0000;
+  -webkit-transform: scale(1.5);
+}
+
+.indicatorCheckbox_indicatorCheckboxContainer_isSelected {
+  background: #ff0000;
+  border-color: #ff0000;
+}
+/*
+--------------------------------------------------------------
+Change Color of Primary Buttons (Begin, Next, Finish)
+--------------------------------------------------------------
+*/
+.button_button_isPrimary, .button_button_isPrimary:hover, .button_button_isPrimary:focus {
+  background: #028940;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+.button_button_isSecondary, .button_button_isSecondary:hover, .button_button_isSecondary:focus {
+    background-color: #F1B700;
+    color: #00572D;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+
+/* Font-size of the question */
+
+.question_questionTitle {
+    position: relative;
+    padding: 0%;
+    font-size: 16px;
+    line-height: 38px;
+    width: 100%;
+    padding-bottom: 0%;
+    padding-top: 0%
+}
+
+/*Custom Footer styling for mobile */
+div#customfooter {
+    padding-bottom: 4%;
+    padding-right: 4%;
+    padding-left: 0%;
+}
+
+/* Additional Validation Block CSS */
+.additionalValidationNode {
+
+    padding-top: 0%;
+}
+
+/* Global Error Block */
+.layout_globalErrorBlock {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    color: #e03131;
+}
+
+/* Dropdown size for mobile*/
+@media screen and (max-width: 600px){
+
+.dropdown_dropdownContainer {
+    width: 45%;
+}
+}
+/*Dropdown size for desktop */
+.dropdown_dropdownContainer {
+    width: 24%;
+}
+
+/*For social media on Thank you Page*/
+@media screen and (min-width: 600px){
+
+.StayConnected {
+    font-size: 24px;
+    font-weight: normal;
+   padding-left: 3%;
+ 
+}
+
+
+     .subLogo {
+    width: 222px;
+    height: 44px;
+}
+
+}
+
+/* To reduce white spacing */
+.question_questionTitle {
+    position: relative;
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+    /*padding-bottom: 1%;*/
+}
+
+/* For Description Message */
+.emailDescCustom{
+    margin-top: -2%;
+    padding-bottom: 2%;
+}
+
+/* For reducing space between questions 
+fieldset {
+    margin-bottom: -6%;
+}
+*/
+
+/* SELECTED RATING GRID RADIO BUTTON COLOR */
+.indicatorCircle_circle_isSelected {
+  background: #333333;
+}
+
+/* SELECTED VERTICAL RADIO BUTTON COLOR */
+.indicatorRadio_indicatorRadioContainer_isSelected {
+  border: 8.4px solid #333333;
+}
+
+/* SELECTED CHECKBOX COLOR */
+.indicatorCheckbox_indicatorCheckboxContainer_isSelected {
+  background: #333333;
+  border: 2px solid #333333;
+}
+/*
+.group_optionContainer:nth-of-type(1) .indicatorCheckbox_indicatorCheckboxContainer_isSelected{
+  background: red;
+}
+.group_optionContainer:nth-of-type(2) .indicatorCheckbox_indicatorCheckboxContainer_isSelected{
+  background: orange;
+}
+.group_optionContainer:nth-of-type(3) .indicatorCheckbox_indicatorCheckboxContainer_isSelected{
+  background: yellow;
+}
+.group_optionContainer:nth-of-type(4) .indicatorCheckbox_indicatorCheckboxContainer_isSelected{
+  background: lightgreen;
+}
+.group_optionContainer:nth-of-type(5) .indicatorCheckbox_indicatorCheckboxContainer_isSelected{
+  background: green;
+}
+*/
+/* Font Weights For Options*/
+.group_optionContainer {
+    border-bottom: 1px solid #dae0ea;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.rowOption_anchorsContainer {
+    vertical-align: bottom;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.cellOption_cellOptionContainer {
+    position: relative;
+    font-weight: normal;
+}
+.rowOption_topCaption {
+    font-size: 16px;
+}
+
+/*Popup Design
+.popup_toolip {
+    margin-left: 76%;
+    margin-bottom: -28%;
+z-index: 500001;
+}
+.popup_popupContainer {
+ padding: 0 0;
+
+}
+*/
+
+/* For styling header text "tellsubway.com underneath logo */
+.TS_headerNavText {
+    margin: auto;
+    padding: 5px 0px 1px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+.TS_headerText {
+    color: #028940;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/*Resizing TextBox and font-size of textbox */
+.textField_textField {
+padding: 1.3%;
+font-size: 16px;
+}
+
+/* For Mobile - Elements under checkbox question*/
+
+@media screen and (max-width: 600px)
+{
+.longform_groupContainer {
+    display: block;
+    margin-bottom: -11%;
+}
+}
+/* Checkbox styling */
+.option_optionContainer {
+    background-color: white;
+}
+.option_indicatorContainer {
+    position: relative;
+    padding-left: 0.8%;
+    width: 5%;
+}
+/* Survey Button */
+.navigationButtons_navigationButtonsContainer {
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    border-collapse: separate;
+    padding-bottom: 4%;
+    padding-top: 0%;
+    direction: rtl;
+}
+
+/* Top Padding */
+.layout_text.textNode{
+padding-top: 0.5%;
+}
+
+/* Layout Ansers*/
+.layout_answers {
+    position: relative;
+    margin: 0 0 22px;
+}
+
+/* Calendar LNF*/
+.calendar_calendarIconContainer {
+padding: 1.5%;
+}
+.calendar_calenderTextfieldInput{
+padding: 1.3%;
+}
+
+/*For Mobile - CSS */
+@media screen and (max-width: 600px)
+{
+/* Mobile Checkbox issue */
+.option_captionContainer{
+padding-left: 5%;
+color: #333333;
+
+}
+/* Removed by ajay
+
+.group_optionContainer:nth-of-type(1) .option_caption{
+  color: #028940;
+}*/
+/*
+.group_optionContainer:nth-of-type(2) .option_caption{
+  color: orange;
+}
+.group_optionContainer:nth-of-type(3) .option_caption{
+  color: yellow;
+}
+.group_optionContainer:nth-of-type(4) .option_caption{
+  color: lightgreen;
+}
+*/
+/* Removed by ajay
+
+.group_optionContainer:nth-of-type(5) .option_caption{
+  color: red;
+}*/
+/* Mobile Box sizes */
+.textField_textField {
+    padding: 2%;
+    font-size: 16px;
+}
+.calendar_calenderTextfieldInput {
+    padding: 2%;
+}
+.calendar_calendarIconContainer {
+    padding: 2.1%;
+}
+
+/*Mobile Page*/
+.StayConnected {
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 3%
+}
+.subLogo {
+    width: 137px;
+    height: 29px;
+}
+.social-media{
+    height: 32px;
+}
+
+}
+/* Calendar Table */
+.calendar_calendarDatePickerContainer{
+top: 0%;
+}
+
+
+/*All the receipt links LNF*/
+.receiptRedirect {
+    margin-top: -2%;
+    padding-bottom: 2%;
+}
+
+/*Thank you Page*/
+.fbLogo {
+    background: #028940;
+}
+.ytLogo {
+    background: #028940;
+}
+.instaLogo {
+    background: #028940;
+}
+.twitLogo {
+    background: #028940;
+}
+
+
+/* HIDING THE REQUIRED INDICATOR */
+.validation_requiredBlock {
+display: none;
+}
+
+
+/* Incentive Code */
+.incentiveCode {
+    background-color: #028940;
+    height: auto;
+    max-width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: white;
+}
+
+/* Character Count Font Bold*/
+#spl_q_subway_ltr_comment_CharCount {
+    font-weight: bold;
+}
+
+/*Background color on Thank you page*/
+.yellowBcg{
+background-color: #FDFFC7;
+}
+
+/*Screen Reader Text */
+.screen-reader-only {
+ position: absolute;
+ height: 1px;
+ width: 1px;
+ clip: rect(1px 1px 1px 1px); /*// IE 6 and 7*/
+ clip: rect(1px,1px,1px,1px);
+ clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+ -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+ /*//overflow: hidden !important;*/
+
+ }
