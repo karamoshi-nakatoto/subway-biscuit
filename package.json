@@ -4,15 +4,11 @@
   "main": "src/index.js",
   "type": "module",
   "author": "Karamoshi Nakatoto <karamoshi.nakatoto@protonmail.com>",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
   "license": "MIT",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "serve"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
+  "dependencies": {
+    "serve": "^14.2.0"
   }
 }
