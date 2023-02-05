@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  web:
+    image: ghcr.io/karamoshi-nakatoto/subway-biscuit:main
+    # build: .
+    ports:
+      - 8080:80
