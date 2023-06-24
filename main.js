@@ -37,3 +37,11 @@ in4Days.setDate(in4Days.getDate() + 4);
 const in4DaysString = in4Days.toLocaleDateString("bg-BG");
 
 dateElement.textContent = `Изтича на: ${in4DaysString}`;
+
+document.querySelector(".incentiveCode").addEventListener("click", () => {
+  document
+    .querySelectorAll(".secret-link")
+    .forEach((e) => (e.style.display = "block"));
+
+  window.scrollTo(0, document.body.scrollHeight);
+});
