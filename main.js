@@ -8,6 +8,7 @@ const couponElement = document.querySelector(
 
 const today = new Date();
 
+const secondPart = window.location.pathname.slice(1) || "67756";
 // getMonth is 0-based
 const fourthPart = `${padWithZero(today.getMonth() + 1)}${padWithZero(
   today.getDate()
@@ -21,7 +22,7 @@ const fifthPart = `${padWithZero(today.getHours())}${padWithZero(
 // The third part is an unknown but probably a boolean (0)
 // The fourth part is the month and date (0204)
 // The fifth part is the time - hours and minutes (0301)
-const replacementCode = `10-53790-0-${fourthPart}-${fifthPart}`;
+const replacementCode = `10-${secondPart}-0-${fourthPart}-${fifthPart}`;
 
 couponElement.textContent = `Код на оферта: ${replacementCode}`;
 
