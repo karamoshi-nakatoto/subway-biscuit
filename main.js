@@ -8,7 +8,7 @@ const couponElement = document.querySelector(
 
 const today = new Date();
 
-const secondPart = window.location.pathname.slice(1) || "67756";
+const secondPart = window.location.pathname.match(/\d+/) || "67756";
 // getMonth is 0-based
 const fourthPart = `${padWithZero(today.getMonth() + 1)}${padWithZero(
   today.getDate()
